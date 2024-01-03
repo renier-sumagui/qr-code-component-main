@@ -32,13 +32,13 @@ p {
     font-size: 15px;
 }
 
-.attribution {
+footer {
     position: absolute;
     margin-inline: auto;
     bottom: 0;
 }
 
-.qr-card {
+main {
     max-width: 18rem;
     text-align: center;
     padding: 1rem;
