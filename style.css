@@ -1,0 +1,80 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+}
+
+:root {
+    --white: 0, 0%, 100%;
+    --light-gray: 212, 45%, 89%;
+    --grayish-blue: 220, 15%, 55%;
+    --dark-blue: 218, 44%, 22%;
+
+    --h1-desktop: 1.2rem;
+
+    --fw-normal: 400;
+    --fw-medium: 700;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(var(--light-gray));
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+.attribution {
+    position: absolute;
+    margin-inline: auto;
+    bottom: 0;
+}
+
+.qr-card {
+    max-width: 18rem;
+    text-align: center;
+    padding: 1rem;
+    background: hsl(var(--white));
+    border-radius: 1.25rem;
+    box-shadow: 0 0.5rem 1.5rem 0 hsl(var(--dark-blue), 0.2)
+}
+
+.qr-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.title {
+    font-weight: var(--fw-medium);
+    font-size: var(--h1-desktop);
+}
+
+.description {
+    margin: 1.3rem 0.8rem;
+}
+
+.description p {
+    color: hsl(var(--dark-blue), 0.5);
+}
+
+.grid-flow {
+    display: grid;
+}
+
+.grid-flow[data-spacing="medium"] {
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 375px) {
+    .qr-card {
+        margin-inline: 0.8rem;
+    }
+}
